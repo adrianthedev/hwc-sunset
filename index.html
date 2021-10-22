@@ -1,0 +1,168 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+
+projects:
+  - COVID-19 Contact Tracer
+  - School Closures
+  - PPE CoalitionGood News Daily
+  - The Vital Sign AI team
+  - Quorum X Diagnostics
+  - Front Line Suits
+  - Fund COVID
+  - ApolloHCT.com
+  - Wellyou in Hard Times
+  - All Probono
+  - iFixit
+  - ClinWiki.org
+  - The Citizen Health
+
+members:
+  - Misa Beach
+  - Adrian Marin
+  - Jamie Wilkinson
+  - Nagesh Bansai
+  - Casey Pugh
+  - Kinjal Poonstar
+  - Tinnei Pang
+  - Cathy Liu
+  - Ambika Bumb
+  - Radu Spineanu
+  - Sam Altman
+
+sponsors:
+  - aws
+  - cloze
+  - blind
+  - turtle
+
+panelists:
+  - Eric Ries
+  - Ambika Bumb
+  - Jaimie Lynn Craig Feliz
+  - Kyum Kim
+  - Jennifer Pisansky
+  - Glen Moriarty
+  - Ivan Gayton
+  - Hilmon Sorey
+  - Cory Bray
+---
+
+<div class="hero">
+  <div class="relative sm:container mx-auto">
+    <div class="flex justify-center">
+      <div class="logo mt-52 lg:mt-72">
+        <img src="/img/logo.svg" class="opacity-75" alt="Help with Covid" />
+      </div>
+    </div>
+    <img src="/img/mobile_image_1.png" alt="Help with Covid project" class="absolute top-0 left-0 -mt-8 -ml-28 xl:hidden transform scale-50 md:scale-75 lg:scale-100">
+    <img src="/img/mobile_image_2.png" alt="Help with Covid project" class="absolute top-0 left-0 mt-96 pt-12 -ml-28 xl:hidden transform scale-50 md:scale-75 lg:scale-100">
+    <img src="/img/mobile_image_3.png" alt="Help with Covid project" class="absolute top-0 left-auto right-0 mt-0 -mr-28 xl:hidden transform scale-50 md:scale-75 lg:scale-100">
+    <img src="/img/mobile_image_4.png" alt="Help with Covid project" class="absolute top-0 left-auto right-0 mt-96 pt-12 -mr-24 xl:hidden transform scale-50 md:scale-75 lg:scale-100">
+    <img src="/img/hero_left.png" alt="Help with Covid projects" class="absolute top-0 left-0 mt-24 ml-12 hidden xl:block">
+    <img src="/img/hero_right.png" alt="Help with Covid projects" class="absolute top-0 left-auto right-0 mt-24 hidden xl:block">
+    <div class="heading text-center font-bold text-4xl lg:text-6xl xl:text-7xl mt-16 text-gray-800">
+      Help with Covid
+    </div>
+    <div class="sub-heading text-center text-md lg:text-lg mt-4 xl:mt-8 pb-52 xl:pb-52 text-gray-800">
+      Thank you 850+ projects, 17,300+ volunteers!
+    </div>
+  </div>
+  </div>
+
+  <div class="relative sm:container mx-auto">
+  <div class="text-gray-400 xl:w-1/2 px-4 mx-auto mt-16">
+    <div class="space-y-4">
+      <p>
+        In March of 2020 at the beginning of the Covid-19 pandemic there was a
+        moment when the world stepped up with countless people helping one
+        another during the darkest of times.
+      </p>
+      <p>
+        HelpWithCovid was created to help match projects dealing with Covid-19
+        and volunteers that wanted to help out. *In the end, over 800 projects
+        and 17,000 volunteers participated.*
+      </p>
+      <p>
+        Years later we're still hearing about the impact HelpWithCovid had on
+        countless projects that ended up making a difference in the global
+        battle against the virus. We're grateful for being able to help, for the
+        support of a great community, and the friends we made along the way.
+      </p>
+      <p>
+        The software that supported the platform is open-source and can be found
+        <a
+          href="https://github.com/helpwithcovid/covid-volunteers"
+          title="Help with Covid platform"
+          target="blank"
+          class="underline"
+          >here</a
+        >.
+      </p>
+      <p>Thank you all, HelpWithCovid Core Team</p>
+    </div>
+
+    <hr class="my-8" />
+
+    <div>
+      <div class="font-bold mb-4">Key projects participated</div>
+
+      <div class="grid grid-cols-1 grid-cols-2 gap-1">
+        {% for project in page.projects %}
+        <div>{{project}}</div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <hr class="my-8" />
+    <div>
+      <div class="font-bold mb-4">
+        List of core team members who kept HWC running
+      </div>
+
+      <div class="grid grid-cols-1 grid-cols-2 gap-1">
+        {% for member in page.members %}
+        <div>{{member}}</div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <hr class="my-8" />
+
+    <div>
+      <div class="font-bold mb-4">
+        Sponsors who supported our projects with their resources
+      </div>
+      <img
+        src="/img/logos.png"
+        class="w-full mt-6 hidden lg:block"
+        alt="Help with Covid sponsors"
+      />
+      <img
+        src="/img/mobile_logos.png"
+        class="w-full mt-6 lg:hidden max-w-md mx-auto"
+        alt="Help with Covid sponsors"
+      />
+    </div>
+
+    <hr class="my-8" />
+
+    <div>
+      <div class="font-bold mb-4">
+        Panelists who supported our projects with their advice
+      </div>
+
+      <div class="grid grid-cols-1 grid-cols-2 gap-1">
+        {% for panelist in page.panelists %}
+        <div>{{panelist}}</div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div>
+      <div class="text-center font-bold mt-16 mb-32">Thank you so much!</div>
+    </div>
+  </div>
+</div>
