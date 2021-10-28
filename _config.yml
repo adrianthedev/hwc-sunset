@@ -30,9 +30,12 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-postcss
+
+sass:
+  implementation: sass-embedded
 
 # Exclude from processing.
 # The following items will not be processed, by default.
